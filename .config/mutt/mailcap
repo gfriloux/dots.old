@@ -1,0 +1,7 @@
+image/jpg; xdg-open %s
+image/jpeg; xdg-open %s
+image/png; xdg-open %s
+image/gif; xdg-open %s
+application/pdf; xdg-open %s
+text/html; xdg-open %s
+
