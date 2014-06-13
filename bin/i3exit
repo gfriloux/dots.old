@@ -1,0 +1,33 @@
+#!/bin/sh
+
+PATH="/usr/lib/colorgcc/bin:/usr/bin:/usr/lib/nx/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/kuri/Apps/bin"
+
+lock() {
+    i3lock -d -i /home/kuri/Apps/Themes/Wallpapers/hacker_by_theartofsin-d128nac.jpg
+}
+
+case "$1" in
+    lock)
+        lock
+        ;;
+    logout)
+        i3-msg exit
+        ;;
+    suspend)
+        lock && systemctl suspend -i
+        ;;
+    hibernate)
+        lock && systemctl hibernate -i
+        ;;
+    reboot)
+        /usr/bin/systemctl reboot -i
+        ;;
+    shutdown)
+        /usr/bin/systemctl poweroff -i
+        ;;
+    *)
+        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        exit 2
+esac
+
+exit 0
