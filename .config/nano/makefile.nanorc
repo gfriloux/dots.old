@@ -5,10 +5,6 @@ syntax "\.mk" "Makefile.am"
 
 # default text
 color magenta "^.*$"
-# rules: command
-color brightblack "^ *[^:=' ][^:=']+*::?[^=;][^;]*;\s*@"
-# rules: dependency list
-icolor yellow "^ *[^:=' ][^:=']+*::?[^=;][^;]*(;|$)"
 # rules: target list
 icolor brightyellow "^ *[^:=' ][^:=']*:"
 color brightgreen "^ *\.(PHONY|SUFFIXES|DEFAULT|PRECIOUS|IGNORE|SILENT|EXPORT_ALL_VARIABLES)\s*:"
@@ -48,5 +44,4 @@ color blue "\$[({]((AR|AS|C0|CPP|CXX|LD)(FLAGS)?|(C|F|G|L|P|R|Y)FLAGS|BISON|CC|C
 color blue "\$((AR|AS|C0|CPP|CXX|LD)(FLAGS)?|(C|F|G|L|P|R|Y)FLAGS|BISON|CC|C?TANGLE|C?WEAVE|FC|FLEX|GET|INSTALL|LEX|MAKE(INFO|FILES|LEVEL|FLAGS)?|PC|RANLIB|RM|SHELL|SUFFIXES|TEX|TEXI2DVI|VPATH|YACCR?)"
 # comments
 color white "^\s*#.*$"
-color white "#([^"'\\]|"[^"\\]*(\\.[^"\\]*)*"|['`][^']*'||\>'\<)*$"
 
