@@ -4,7 +4,7 @@ if [ "x${OS}" = "xFreeBSD" ]; then
   echo "Command to install needed packages :"
   echo "pkg install ncdu dfc most curl colorgcc gcc " \
        "bison automake autoconf pkgconf ccache subversion " \
-       "libssh2 netcat libtool gettext gmake jpeg"
+       "libssh2 netcat libtool gettext gmake jpeg re2c"
 elif [ -e /etc/arch-release ]; then
   echo "Command to install needed packages :"
   echo "pacman -S ccache colorgcc"
