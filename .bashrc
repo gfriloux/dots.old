@@ -11,11 +11,14 @@ export EDITOR="nano"
 export LANG=fr_FR.UTF-8
 export MANPAGER="/usr/bin/most -s"
 
+export CPPFLAGS='-I/usr/local/include'
+export LDFLAGS='-L/usr/local/lib'
+
 if [ -e /etc/arch-release ]; then
   export PATH="/usr/lib/colorgcc/bin/:$PATH"
   export CCACHE_PATH="/usr/bin" 
 fi
 
-. .config/bash/functions.sh
+. ~/.config/bash/functions.sh
 
 #PS1='\[\033[01;34m\]> \[\033[00m\]'
