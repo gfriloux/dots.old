@@ -1,0 +1,9 @@
+
+OS=$(uname)
+
+
+if [ "x${OS}" = "xFreeBSD" ]; then
+  echo "Command to install needed packages :"
+  echo "pkg install ncdu dfc most curl colorgcc gcc " \
+       "bison automake autoconf pkgconf"
+fi
