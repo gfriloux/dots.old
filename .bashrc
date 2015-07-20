@@ -2,6 +2,8 @@
 
 alias xterm="xterm -fa inconsolata-9"
 alias mount='mount | column -t'
+alias friloux_stats='(echo "stats"; sleep 3) | nc friloux.me 79'
+alias friloux_backup='(echo "backup"; sleep 3) | nc friloux.me 79'
 
 export TERM="xterm-256color"
 export VISUAL=nano
