@@ -3,7 +3,8 @@ OS=$(uname)
 if [ "x${OS}" = "xFreeBSD" ]; then
   echo "Command to install needed packages :"
   echo "pkg install ncdu dfc most curl colorgcc gcc " \
-       "bison automake autoconf pkgconf ccache"
+       "bison automake autoconf pkgconf ccache subversion " \
+       "libssh2 netcat"
 elif [ -e /etc/arch-release ]; then
   echo "Command to install needed packages :"
   echo "pacman -S ccache colorgcc"
