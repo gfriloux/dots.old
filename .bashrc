@@ -1,7 +1,6 @@
 [[ $- != *i* ]] && return
 
 alias xterm="xterm -fa inconsolata-9"
-alias ls="/usr/bin/vendor_perl/ls++"
 alias nano="nano -c"
 alias mount='mount | column -t'
 
