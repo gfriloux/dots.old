@@ -1,7 +1,6 @@
 [[ $- != *i* ]] && return
 
 alias xterm="xterm -fa inconsolata-9"
-alias nano="nano -c"
 alias mount='mount | column -t'
 
 export TERM="xterm-256color"
@@ -14,5 +13,7 @@ if [ -e /etc/arch-release ]; then
   export PATH="/usr/lib/colorgcc/bin/:$PATH"
   export CCACHE_PATH="/usr/bin" 
 fi
+
+. .config/bash/functions.sh
 
 #PS1='\[\033[01;34m\]> \[\033[00m\]'
