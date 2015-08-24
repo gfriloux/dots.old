@@ -21,6 +21,7 @@ fi
 
 . ~/.config/bash/functions.sh
 
+source ~/.config/bash/pass
 source ~/.config/bash/liquidprompt
 
 #PS1='\[\033[01;34m\]> \[\033[00m\]'
