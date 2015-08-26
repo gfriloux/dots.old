@@ -9,7 +9,7 @@ export TERM="xterm-256color"
 export VISUAL=nano
 export EDITOR="nano"
 export LANG=fr_FR.UTF-8
-export MANPAGER="/usr/bin/most -s"
+export MANPAGER="most -s"
 
 export CPPFLAGS='-I/usr/local/include'
 export LDFLAGS='-L/usr/local/lib'
