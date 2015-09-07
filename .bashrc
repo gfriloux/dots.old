@@ -10,6 +10,7 @@ export VISUAL=nano
 export EDITOR="nano"
 export LANG=fr_FR.UTF-8
 export MANPAGER="most -s"
+export PAGER="most -s"
 
 export CPPFLAGS='-I/usr/local/include'
 export LDFLAGS='-L/usr/local/lib'
