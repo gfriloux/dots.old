@@ -31,22 +31,34 @@ new_window 1pixel
 new_float 1pixel
 
 # ASSIGN WORKSPACE VARIABLES
-set $WS1 [ term ]
-set $WS2 [ web ]
-set $WS3 [ code ]
-set $WS4 [ chat ]
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4
 
 # switch to workspace
-bindsym $mod+1 workspace $WS1
-bindsym $mod+2 workspace $WS2
-bindsym $mod+3 workspace $WS3
-bindsym $mod+4 workspace $WS4
-bindsym $mod+5 workspace $WS5
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10:sample name
+bindsym $mod+0 workspace 10
+bindsym $mod+F1 workspace F1
+bindsym $mod+F2 workspace F2
+bindsym $mod+F3 workspace F3
+bindsym $mod+F4 workspace F4
+bindsym $mod+F5 workspace F5
+bindsym $mod+F6 workspace F6
+bindsym $mod+F7 workspace F7
+bindsym $mod+F8 workspace F8
+bindsym $mod+F9 workspace F9
+bindsym $mod+F10 workspace F10
+bindsym $mod+F11 workspace F11
+bindsym $mod+F12 workspace F12
 
 # take screenshot
 # bindsym Print exec scrot '%Y-%m-%d-%t_$wx$h.png' -e 'mv $ $f ~/images/'
@@ -150,6 +162,10 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -184,11 +200,11 @@ bar {
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id /home/kuri/Apps/bin/i3exit lock, mode "default"
-    bindsym e exec --no-startup-id /home/kuri/Apps/bin/i3exit logout, mode "default"
-    bindsym s exec --no-startup-id /home/kuri/Apps/bin/i3exit suspend, mode "default"
-    bindsym h exec --no-startup-id /home/kuri/Apps/bin/i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id /home/kuri/Apps/bin/i3exit reboot, mode "default"
+    bindsym l exec --no-startup-id /home/kuri/apps/bin/i3exit lock, mode "default"
+    bindsym e exec --no-startup-id /home/kuri/apps/bin/i3exit logout, mode "default"
+    bindsym s exec --no-startup-id /home/kuri/apps/bin/i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id /home/kuri/apps/bin/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id /home/kuri/apps/bin/i3exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"  
 
     # back to normal: Enter or Escape
