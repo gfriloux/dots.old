@@ -1,0 +1,87 @@
+!-------------------------------------------
+! XFT Settings
+     
+Xft.dpi:                            96
+Xft.antialias:                      true
+Xft.rgba:                           rgb
+Xft.hinting:                        true
+Xft.hintstyle:                      hintslight
+     
+
+!-------------------------------------------
+! URXVT - Settings
+
+URxvt*geometry:                     80x25
+URxvt*foreground:                   white 
+URxvt*background:                   #111111
+URxvt*borderLess:                   false
+URxvt*scrollBar:                    false
+URxvt*cursorBlink:                  true
+URxvt*cursorUnderline:              true
+URxvt*cursorColor:                  #ffffff
+URxvt*scrollColor:                  #151515
+URxvt*perl-ext-common:              default,clipboard,url-select,keyboard-select,vtwheel
+URxvt*font:                         xft:nanum gothic coding-10:style=normal:hinting=false:antialias=true
+URxvt*boldFont:                     xft:nanum gothic coding-10:style=bold:hinting=false:antialias=true
+URxvt*italicFont:                   xft:nanum gothic coding-10:style=italic:hinting=false:antialias=true
+URxvt*boldItalicFont:               xft:nanum gothic coding-10:style=bolditalic:hinting=false:antialias=true
+URxvt.underlineURLs:                true
+URxvt.url-select.launcher:          /usr/bin/chromium
+URxvt.url-select.underline:         true
+
+URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.C-p:   perl:clipboard:paste
+!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-u: perl:url-select:select_next
+
+ 
+!--------------------------------------------
+! URxvt Colors
+
+URxvt.colorIT:                       #87af5f
+URxvt.colorBD:                       #d7d7d7
+URxvt.colorUL:                       #BF1E2D
+
+
+!--------------------------------------------
+! General Colors
+
+*foreground:                         white
+*background:                         #111111
+
+!black
+*color0:                             #59002f
+*color8:                             #793156
+!red
+*color1:                             #8c022c
+*color9:                             #c0003a
+!green
+*color2:                             #cd8c15
+*color10:                            #dba239
+!yellow
+*color3:                             #ffc863
+*color11:                            #ffda95
+!blue
+*color4:                             #330048
+*color12:                            #502762
+!magenta
+*color5:                             #8c0149
+*color13:                            #c80069
+!cyan
+*color6:                             #4c016b
+*color14:                            #7200a3
+!white
+*color7:                             #fd6f6b
+*color15:                            #fdc3c1
+
+
+!-------------------------------------------
+! Man pages colors
+
+*VT100.colorBDMode:                  true
+*VT100.colorBD:                      red
+*VT100.colorULMode:                  true
+*VT100.colorUL:                      magenta
+*VT100.veryBoldColors:               6
+

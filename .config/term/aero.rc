@@ -1,0 +1,43 @@
+!
+! invisibone by baskerville
+!
+! vim: set ft=xdefaults:
+
+*.background: #232323
+*.foreground: #A0A0A0
+
+*.colorBD:    #CFCFCF
+*.colorUL:    #A0A0A0
+*.colorIT:    #686868
+
+!BLK
+*.color0:     #575757
+*.color8:     #757575
+
+!RED
+*.color9:     #CB1456
+*.color1:     #E32D72
+
+!GRN
+*.color10:    #57CB14
+*.color2:     #70E32D
+
+!BLU
+*.color12:    #1457CB
+*.color4:     #2D70E3
+
+!YEL
+*.color11:    #CB8814
+*.color3:     #E3A82D
+
+!CYN
+*.color14:    #14CB88
+*.color6:     #2DE3A0
+
+!MAG
+*.color13:    #C514CB
+*.color5:     #DD2DE3
+
+!WHT
+*.color7:     #DFDFDF
+*.color15:    #FFFFFF
