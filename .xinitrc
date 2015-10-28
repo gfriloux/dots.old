@@ -1,11 +1,9 @@
-xrdb ~/.Xresources
-
-[[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
-
 xset fp+ $HOME/.fonts/misc
 xset fp+ $HOME/.fonts/ohsnap
 xset fp+ $HOME/.fonts/terminesspowerline
 xset fp+ $HOME/.fonts/tewi
+
+[[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
 
 export TERM="xterm-256color"
 

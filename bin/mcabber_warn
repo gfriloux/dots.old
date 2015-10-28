@@ -24,6 +24,10 @@ if [ "x$event" != "xMSG" ]; then
   exit 0
 fi
 
+if [ "x${arg1}" = "xOUT" ]; then
+  exit 0
+fi
+
 nick="${arg2}"
 
 # Remove domain name

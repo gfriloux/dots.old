@@ -60,6 +60,9 @@ bindsym $mod+F10 workspace F10
 bindsym $mod+F11 workspace F11
 bindsym $mod+F12 workspace F12
 
+bindsym $mod+Shift+n workspace prev
+bindsym $mod+Shift+p workspace next
+
 # take screenshot
 # bindsym Print exec scrot '%Y-%m-%d-%t_$wx$h.png' -e 'mv $ $f ~/images/'
 bindsym Print exec scrot 'Screenshot - %Y-%m-%d--%_$wx$h_scrot.png' -e 'mv $f ~/'
@@ -165,6 +168,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
+bindsym $mod+Delete exec "~/bin/mcabber_warn"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
