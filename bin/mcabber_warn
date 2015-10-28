@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+# Highlighting for lemonbar from mcabber messages.
+#
+# No parameters → Reset highlight.
+
+. ~/.i3/lemonbar/i3_lemonbar_config
+
+event=$1
+arg1=$2
+arg2=$3
+filename=$4
+
+if [ ! -e "${panel_fifo}" ] ; then
+  exit 0
+fi
+
+if [ $# -eq 0 ]; then
+  printf "IRC0\n" > "${panel_fifo}"
+  exit 0
+fi
+
+if [ "x$event" != "xMSG" ]; then
+  exit 0
+fi
+
+nick="${arg2}"
+
+# Remove domain name
+nick="${nick%@*}"
+
+# Remove last name
+nick="${nick%.*}"
+
+# Cut large nicks > 15
+if [ "${#nick}" -gt 15 ]; then
+  nick="$(echo ${nick} | cut -c 1-15)"
+  nick=$nick"+"
+fi
+printf "%s%s %s\n" "IRC" "$(date +%H:%M)" "${nick}" > "${panel_fifo}"
+
