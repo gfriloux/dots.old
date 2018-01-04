@@ -12,4 +12,9 @@ export TERM="xterm-256color"
 #/usr/bin/volumeicon &
 #redshift&
 
-exec i3
+exec startkde
+#exec i3
+#E_START=enlightenment enlightenment -i-really-know-what-i-am-doing-and-accept-full-responsibility-for-it
+
+#export XDG_CURRENT_DESKTOP=Budgie:GNOME
+#exec budgie-desktop
